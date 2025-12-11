@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyRent - Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SkyRent</div>
+            <ul class="nav-links">
+                <li><a href="../Task%20I/index.html">Home</a></li>
+                <li><a href="../Task%20J%20Catalog/index.html">Catalog</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-intro">
+            <h1>Place Your Order</h1>
+            <p>Complete the form below to rent a drone. We'll get back to you within 24 hours.</p>
+        </section>
+
+        <section class="order-form-section">
+           <h2 class="visually-hidden">Order Form</h2>
+           <form id="orderForm" class="order-form">
+                
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rental Details</legend>
+                    
+                    <div class="form-group">
+                        <label for="droneModel">Drone Model *</label>
+                        <select id="droneModel" name="droneModel" required>
+                            <option value="">-- Select a drone --</option>
+                            <option value="phantom-pro">Phantom Pro (45 €/d)</option>
+                            <option value="creator-max">Creator Max (89 €/d)</option>
+                            <option value="elite-aerial">Elite Aerial (149 €/d)</option>
+                            <option value="photo-master">Photo Master (69 €/d)</option>
+                            <option value="night-vision">Night Vision Pro (129 €/d)</option>
+                            <option value="speed-racer">Speed Racer (79 €/d)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="startDate">Start Date *</label>
+                        <input type="date" id="startDate" name="startDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endDate">End Date *</label>
+                        <input type="date" id="endDate" name="endDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity *</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="message">Special Requests or Questions</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about any special requirements or questions you have..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I accept the rental terms and privacy policy *</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for special offers</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Submit Rental Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SkyRent</h3>
+                <p>Professional drone rentals for creators and adventurers.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@skyrent.fi</p>
+                <p>Phone: +358 40 555 1234</p>
+                <p>Jyväskylä, Finland</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../Task%20I/index.html">Home</a>
+                <a href="../Task%20J%20Catalog/index.html">Catalog</a>
+                <a href="order.html">Order</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SkyRent. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

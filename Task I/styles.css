@@ -79,7 +79,6 @@ main {
     background-position: center;
 }
 
-
 .hero-content {
     position: relative;
     z-index: 1;
@@ -129,7 +128,6 @@ main {
     background: #00b8e6;
 }
 
-
 section {
     padding: 4.5rem 2rem;
     max-width: 1200px;
@@ -143,6 +141,7 @@ section {
 .drones {
     padding: 4rem 2rem;
 }
+
 .about {
     text-align: center;
     background: linear-gradient(180deg, var(--dark) 0%, var(--dark-light) 100%);
@@ -189,7 +188,6 @@ section {
 
 .drone-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
 }
 
 .drone-image {
@@ -204,6 +202,11 @@ section {
     overflow: hidden;
 }
 
+.drone-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .drone-info {
     padding: 1.5rem;
